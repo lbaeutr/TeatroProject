@@ -16,6 +16,11 @@ public class Entrada {
         this.precio = precio;
     }
 
+    
+    public Entrada() {
+    }
+
+
     public Espectaculo getEspectaculo() {
         return espectaculo;
     }
