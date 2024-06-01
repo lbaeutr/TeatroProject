@@ -1,19 +1,14 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Cliente {
     private String dni;
     private String nombre;
     private String prApellido;
     private String sgApellido;
-    private List<Entrada> listEntradas = new ArrayList<>();
-
-    public Cliente(String dni, String nombre, String prApellido, String sgApellido, List<Entrada> listEntradas) {
+    
+    public Cliente(String dni, String nombre, String prApellido, String sgApellido) {
         this.dni = dni;
         this.nombre = nombre;
         this.prApellido = prApellido;
         this.sgApellido = sgApellido;
-        this.listEntradas = listEntradas;
     }
 
     public String getDni() {
@@ -47,13 +42,5 @@ public class Cliente {
     public void setSgApellido(String sgApellido) {
         this.sgApellido = sgApellido;
     }
-
-    public List<Entrada> getListEntradas() {
-        return listEntradas;
-    }
-
-    public void setListEntradas(List<Entrada> listEntradas) {
-        this.listEntradas = listEntradas;
-    }
-
+    
 }

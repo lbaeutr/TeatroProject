@@ -13,9 +13,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
 
         char asientos[][] = new char[10][10];
-        Entrada entrada = new Entrada();
-        List<Entrada> listEntradas = new ArrayList<>();
-        Cliente cliente = new Cliente("12345678", "Manolito", "rodriguez", "benitez", listEntradas);
+        
 
         teatroVacio(asientos);
         imprimirMatriz(asientos);
@@ -32,7 +30,6 @@ public class App {
         }
         return asientos;
     }
-    
     public static void imprimirMatriz(char[][]asientos){
         for (int f = 0; f < 10; f++) {
             System.out.print((f + 1) < 10 ? " " + (f + 1) : (f + 1));
@@ -69,7 +66,14 @@ public class App {
         }
         return asientos;
     }
+    public static Cliente crearCliente(Scanner sc){
+
+        
+        
+        
+    }
 }
+    
 
 
 
