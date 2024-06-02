@@ -54,7 +54,7 @@ public class ClienteDao extends Conexion implements CRUD<Cliente>{
             if(filasAfectadas > 0){
                 System.out.println("Cliente borrado");
             }else{
-                System.out.println("No existe ningun alumno con esa ID");
+                System.out.println("No existe ningun cliente con ese dni");
             }
         }catch(SQLException e){
             e.printStackTrace();

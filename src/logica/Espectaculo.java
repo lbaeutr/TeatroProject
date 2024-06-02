@@ -2,13 +2,13 @@ package logica;
 import java.time.LocalDate;
 
 public class Espectaculo {
-    private int codEspectaculo;
+    private String codEspectaculo;
     private String nombreEspectaculo;
     private String genero;
     private LocalDate fechaEspectaculo;
     private int numeroEntradas;
     
-    public Espectaculo(int codEspectaculo, String nombreEspectaculo, String genero, LocalDate fechaEspectaculo,
+    public Espectaculo(String codEspectaculo, String nombreEspectaculo, String genero, LocalDate fechaEspectaculo,
             int numeroEntradas) {
         this.codEspectaculo = codEspectaculo;
         this.nombreEspectaculo = nombreEspectaculo;
@@ -17,10 +17,10 @@ public class Espectaculo {
         this.numeroEntradas = numeroEntradas;
     }
     
-    public int getCodEspectaculo() {
+    public String getCodEspectaculo() {
         return codEspectaculo;
     }
-    public void setCodEspectaculo(int codEspectaculo) {
+    public void setCodEspectaculo(String codEspectaculo) {
         this.codEspectaculo = codEspectaculo;
     }
     public String getNombreEspectaculo() {
