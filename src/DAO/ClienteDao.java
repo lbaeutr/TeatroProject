@@ -84,6 +84,8 @@ public class ClienteDao extends Conexion implements CRUD<Cliente>{
                 sgApellido = resultSet.getString("sgApellido");
                 
                 clienteEncontrado = new Cliente(dni, nombre, prApellido, sgApellido);
+            }else {
+                System.out.println("Cliente no encontrado");
             }
         } catch (SQLException e) {
             e.printStackTrace();

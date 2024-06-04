@@ -12,8 +12,8 @@ public class App {
         List <Cliente> listaClientes = new ArrayList<>();
         ClienteDao dao = new ClienteDao();
         
-        Cliente cliente = null;
-        dao.eliminar("12345678");
+        Cliente cliente = new Cliente();
+        cliente.crearCliente();
 
         
     

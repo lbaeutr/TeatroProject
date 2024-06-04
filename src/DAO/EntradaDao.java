@@ -72,7 +72,7 @@ public class EntradaDao extends Conexion {
                 String codEspectaculo = resultSet.getString("codEspectaculo");
                 String dni = resultSet.getString("dni");
                 int fila = resultSet.getInt("fila");
-                int columna = resultSet.getInt("columna");//todo mirar esto de aqui
+                int columna = resultSet.getInt("columna");
                 Date fechaCompra = resultSet.getDate("fechaCompra");
                 double precio = resultSet.getDouble("precio");
                 entrada = new Entrada(codEntrada, codEspectaculo, dni, fila, columna, fechaCompra.toLocalDate(),
