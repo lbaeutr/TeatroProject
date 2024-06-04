@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class Conexion {
     protected Connection conexion;
-    private final String url = "";
-    private final String user = "";
-    private final String pass = "";
+    private final String url = "jdbc:mariadb://localhost:3306/teatro";
+    private final String user = "root";
+    private final String pass = "admin";
 
     public void conectar(){
         try{
@@ -17,11 +17,16 @@ public class Conexion {
             e.printStackTrace();
         }
     }
-    public void desconectar() throws SQLException{
+    public void desconectar() {
+    try {
         if (conexion != null){
             if (!conexion.isClosed()){
                 conexion.close();
             }
         }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }    
+        
     }
 }
