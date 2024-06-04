@@ -47,6 +47,6 @@ public class Espectaculo {
     public void setNumeroEntradas(int numeroEntradas) {
         this.numeroEntradas = numeroEntradas;
     }
-
+     
 
 }
