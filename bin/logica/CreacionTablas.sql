@@ -10,7 +10,7 @@ CREATE TABLE Espectaculo (
     nombreEspectaculo VARCHAR(100) NOT NULL,
     genero VARCHAR(50) NOT NULL,
     fechaEspectaculo DATE NOT NULL,
-    numeroEntradas INT NOT NULL DEFAULT 100
+    numeroEntradas INT NOT NULL DEFAULT 100 --Eliminar
 );
 
 
